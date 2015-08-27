@@ -59,7 +59,7 @@ public class App
 
 		
 		
-		File f = new File("/Users/manuelzegarra/Desktop/cert/public.crt");
+		File f = new File("/Users/manuelzegarra/Desktop/cert/cert2/public_key.der");
 		
         X509Certificate cert = X509Certificate.getInstance(new FileInputStream(f));
 
@@ -71,7 +71,7 @@ public class App
         encryptCipher.init(Cipher.ENCRYPT_MODE, cert.getPublicKey());
 
         
-        String message = "secret message";
+        String message = "111111";
         byte[] messageACrypter = message.getBytes();
         byte[] messageCrypte = encryptCipher.doFinal(messageACrypter);
 
@@ -88,18 +88,18 @@ public class App
     	
     	
     	
-    	String message1 = "secret message";
+    /*	String message1 = "secret message";
         byte[] messageACrypter = message1.getBytes();
         String messageCrypteB64 = new String(Base64.encode(messageACrypter));
         System.out.println(messageCrypteB64);
-        System.out.println("=========");
+        System.out.println("=========");*/
         
     	
     	
     		
     	try {
     		
-    		
+    		/*
     		String trama = "oxLFCXW+K3OiyfQp6sR7gLxk8d279sUh1QH5zg44DG1EnJ7ob6emVrDa6OsTfJlXCBum2D5tLEbd" +
     "R5p1fFO5n8tAdPdF8lfzA1iS+lHl8rYnzVnqAdf8kJ2+agJG94xx5xiogrUYO5H+tcngEJc+Jlm7" +
     "wmnDIcalO9q2fbmlM5r2XFYf2C8JLdSk/6NvuujwB8Q4GK9tkhMy4RlbdvcpyF9YC0vQaLNCebaH" +
@@ -108,12 +108,18 @@ public class App
     "VpM2F1onHWTJaWcnxe0xEp0gGQFybgXx9z+e1LPQ74hHBtAgPpu67f/NHTdEQeoulcau/3F3sKNC" +
     "6xZw0N6HyLBR9v8yelNCkIqW8XuvBiVaTTvvAJ0Jn//bv8kwh3nbJd3gOszaWzxhnOE0rjvVZE1u" +
     "FdCf99yzSAqGqX+vFo09n/FqpXRSbwXC5W58msioLvNu4hD37pjVSXJsT8ovRm/I5ooSLRVFalSR" +
-    "kUWYW8jgUlNNv+9bowQVLM4aEh+M4tsABSWXQ8ASTpXkLLJeSbDw4o3af/TTBci+BfQL87k2wJ4=";
+    "kUWYW8jgUlNNv+9bowQVLM4aEh+M4tsABSWXQ8ASTpXkLLJeSbDw4o3af/TTBci+BfQL87k2wJ4=";*/
+    		
+    		
+    		
+    		
+    		String trama = "pCjULbzCZLTmPxa9Wc/TxidqTZgVhLw0DKz8N95l/IayzQBcGTxsNgStDedNK35zwONPbDYXyIBUgn6FwesXz9IiHkFWMqssmlLXfQ0lZEnkYKu3p+SqQInj2ssgONy6HPVLpnsIqmrKBalgoT6poIk9m8tsF12MeDfyOI4Woe8Uzs7soO5essYnBnM+wYvRmPXQRU8x02/Kmbohl1ef7A0Jrv42WDwK3CThojmBI8pgzCRn9eQdGKwyaCwzYp4qE3gqN164MEys9noujCJfZM28OCvI0IelSaWO5TR3yBciTW8/EefGjp4q57RZ7JQktJptlr+uTbNcnPdgz96NZw==";
+    		
     		//trama =  encriptar();
     		
     		Security.addProvider(new BouncyCastleProvider());
 
-			PrivateKey privateKey = getPrivateKey("/Users/manuelzegarra/Desktop/cert/private.key");
+			PrivateKey privateKey = getPrivateKey("/Users/manuelzegarra/Desktop/cert/cert3/private.pem");
 			
 			
 			Cipher rsa = Cipher.getInstance("RSA/ECB/PKCS1Padding");
