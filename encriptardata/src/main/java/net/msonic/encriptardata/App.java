@@ -99,7 +99,7 @@ public class App
     		
     	try {
     		
-    		
+    		//Tramas de android y iOS
     		String trama = "iqqWErhVHfCBRQ6dJjhc/GBGCS8XuJVPspQ+WVCPOcXVMjQf2x5RG4deXdOf1CHClSrTw/EwhWo6" +
     "zrecW7q+QouiPEEE5efiJEY9oZE4VrlokeP6mPf5jkTloh0SMDEFzEjAN6Kyf4TVcgjieieDI4ri" +
     "jLMbkCU6mkBhlucA0gDviZYYv99QgEWsVFf3vPHWU8MoXdK85fxRtfEER41CcW0pvSVhchXG15cA" +
